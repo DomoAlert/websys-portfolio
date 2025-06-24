@@ -1,0 +1,145 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('ss.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header {
+    background-color: #757b7c;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer {
+    background-color: #7c7c7c;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    margin-top: auto;
+    
+}
+
+footer p {
+    margin: 0;
+}
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    background-image: url('casiLogo.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    width: 100px; 
+    height: 50px; 
+    display: inline-block;
+    line-height: 50px; 
+    border-radius: 60px;
+}
+.nav {
+    list-style: none;
+    display: flex;
+}
+.nav li {
+    margin-right: 20px;    
+}
+.nav li a {
+    color: rgb(255, 255, 255); 
+    transition: color 0.3s;
+    text-decoration: none;     
+}
+.nav li a:hover{
+    color: #00aeff;
+}
+.portrait {
+    width: 1000px;
+    height: 300px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    background-image: url('cover.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+}
+.portrait:hover {
+    transform: scale(1.05);
+}
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease; 
+}
+.profile-image:hover {
+    transform: scale(1.1);
+}
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 18px; 
+    line-height: 1.5; 
+    color: #555; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
+}
+.intro strong {
+    color: #303638; 
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+@media screen and (max-width: 768px) {
+.header {
+    flex-direction: column;
+    text-align: center;
+}
+.nav {
+    margin-top: 20px;
+}
+.portrait {
+    width: 150px;
+    height: 150px;
+}
+.social-icons {
+    flex-wrap: wrap;
+    }
+}
+    
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('ss.png'); 
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

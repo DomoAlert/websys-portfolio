@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-image: url('casibg.jpg');  
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.navbar-brand {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #303638;
+    border-radius: 5px;
+    margin: 20px;
+}
+.navbar-brand:hover {
+    background-color: #444;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.gallery a {
+    display: block;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 200px;
+    height: 200px;
+}
+.gallery a:hover {
+    transform: translateY(-5px);
+}
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.gallery a.active img {
+    transform: scale(1.1);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: hidden;
+    }
+
+.modal-content img {
+    max-width: 80%;
+    max-height: 80%; 
+    display: block;
+    margin: auto;
+    object-fit: contain;
+}
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: red;
+        font-size: 16px;
+        }
+        }
+
+        /* Media query for devices with max width of 900px */
+        @media only screen and (min-width: 501px) and (max-width: 700px) {
+        body {
+        background-color: blue;
+        font-size: 24px;
+        }
+        }   
+
+        /* Media query for devices with max width of 1200px */
+        @media only screen and (min-width: 701px) and (max-width: 1200px) {
+        body {
+        background-color: green;;
+        font-size: 28px;
+        }
+}
